@@ -1,0 +1,8 @@
+dist: bionic
+language: node_js
+node_js:
+  - "0.10"
+before_install:
+  - npm update -g npm
+  - npm install -g jake
+script: ./bin/cli.js test --trace
