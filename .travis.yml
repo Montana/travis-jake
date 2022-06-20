@@ -6,4 +6,4 @@ before_install:
   - npm update -g npm
   - npm install -g jake
 script: 
-  - jake -v 
+  - jake -t 
