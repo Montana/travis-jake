@@ -1,7 +1,10 @@
-dist: bionic
 language: node_js
 node_js:
+  - "8"
+  - "10"
   - "12"
 before_install:
-  - npm install -g jake
-  - jake -t 
+  - npm update -g npm
+script:
+  - npm run-script test:ci
+sudo: false
