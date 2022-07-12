@@ -1,9 +1,0 @@
-dist: jammy
-language: node_js
-node_js:
-  - "12"
-before_install:
-  - npm update -g npm
-  - npm install -g jake
-script: 
-  - jake -v 
